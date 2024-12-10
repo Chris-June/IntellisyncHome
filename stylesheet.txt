@@ -1,0 +1,99 @@
+# Intellisync Solutions Style Guide
+
+## Color Schemes and Gradients
+
+### Custom Gradients
+We use three main gradient schemes throughout the application:
+
+1. Primary Gradient (Emerald to Cyan)
+   ```css
+   --gradient-primary: linear-gradient(135deg, #10b981 0%, #22d3ee 100%)
+   ```
+   Usage: Main CTAs, primary interactive elements
+
+2. Secondary Gradient (Purple to Pink)
+   ```css
+   --gradient-secondary: linear-gradient(135deg, #7c3aed 0%, #db2777 100%)
+   ```
+   Usage: Secondary elements, highlights
+
+3. Accent Gradient (Blue to Cyan)
+   ```css
+   --gradient-accent: linear-gradient(135deg, #3b82f6 0%, #22d3ee 100%)
+   ```
+   Usage: Accent elements, special features
+
+### Utility Classes
+
+#### Background Gradients
+- `.gradient-primary`: Emerald to Cyan gradient background
+- `.gradient-secondary`: Purple to Pink gradient background
+- `.gradient-accent`: Blue to Cyan gradient background
+
+#### Text Gradients
+- `.text-gradient-primary`: Emerald to Cyan gradient text
+- `.text-gradient-secondary`: Purple to Pink gradient text
+- `.text-gradient-accent`: Blue to Cyan gradient text
+
+## Typography
+
+### Font Stack
+```css
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
+```
+
+### Text Properties
+- Base line height: 1.5
+- Base font weight: 400
+- Text rendering: optimizeLegibility
+- Font smoothing: antialiased
+
+### Links
+- Default color: #646cff
+- Hover color: #535bf2
+- Font weight: 500
+- No text decoration
+
+## Layout
+
+### Global Settings
+- Prevents horizontal scrolling
+- Full viewport width maintained
+- Minimum width: 320px
+- Minimum height: 100vh
+
+### Grid Background
+- Custom white grid pattern for backgrounds
+- Class: `.bg-grid-white`
+
+## Buttons
+
+### Default Button Styles
+- Border radius: 8px
+- Padding: 0.6em 1.2em
+- Font size: 1em
+- Font weight: 500
+- Background color: #1a1a1a
+- Transparent border
+- Hover effect: Shows border in #646cff
+- Transition: border-color 0.25s
+
+## Best Practices
+
+1. Always use utility classes when available instead of writing custom CSS
+2. Maintain consistent spacing using Tailwind's spacing scale
+3. Use semantic HTML elements with appropriate ARIA attributes
+4. Follow mobile-first responsive design principles
+5. Leverage Tailwind's color palette for consistency
+
+## Dark Mode Support
+- Color scheme supports both light and dark modes
+- Dark mode background: #242424
+- Dark mode text color: rgba(255, 255, 255, 0.87)
+
+## Notes for Developers
+
+1. The project uses Tailwind CSS - refer to Tailwind documentation for additional utility classes
+2. Custom utilities are defined in the @layer utilities section
+3. Base styles are defined in the @layer base section
+4. Avoid direct style modifications - extend through Tailwind configuration when possible
